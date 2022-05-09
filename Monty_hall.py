@@ -16,17 +16,17 @@ for _ in range(trial):
         if i!=player_choice and i != car:
             empty_door.append(door[i])
 
-        com = random.sample(empty_door, 1)[0]
+    com = random.sample(empty_door, 1)[0]
 
-        if player_choice == car:
-            no_change += 1
+    if player_choice == car:
+        no_change += 1
 
-        empty_door.remove(com)
+    empty_door.remove(com)
 
 
-        if not empty_door:
-            change += 1
+    if not empty_door:
+        change += 1
             
 print('case1:', no_change/trial, '%')
-print('case2:',change/trial, '%')            
+print('case2:',change/trial, '%')
 
